@@ -1,0 +1,280 @@
+* {
+    font-family: "Merriweather", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,
+h2,
+h6 {
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+body {
+    background: url(./images/bg.jpg) fixed center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    color: #00000085;
+}
+.butop,
+.head-left,
+.head-right {
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    padding: 24px 10px;
+    color: whitesmoke;
+    font-size: 0.8rem;
+}
+.button {
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    padding: 10px 50px;
+    font-size: 0.8rem;
+    color: black;
+    border: 2px solid black;
+    margin: 50px 0;
+}
+.butop:hover,
+.button:hover,
+.head-left:hover,
+.head-right:hover {
+    background: whitesmoke;
+    color: black;
+}
+
+/**************************** HEADER *************************/
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    color: whitesmoke;
+    padding: 0 auto;
+    text-align: center;
+}
+h1 {
+    font-size: 4rem;
+    margin: 50px 0;
+    width: 70%;
+    letter-spacing: 5px;
+    color: whitesmoke;
+}
+.fa-solid {
+    border: 2px solid whitesmoke;
+    margin: 50px;
+    padding: 25px;
+    border-radius: 150px;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background: #ffffff54;
+    padding: 20px 0;
+    width: 100%;
+}
+.head-right .fa-brands {
+    margin: 0 10px;
+    color: whitesmoke;
+}
+
+/**************************** MAIN ***************************/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+}
+.date {
+    margin: 50px auto;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 35% 30% 35%
+}
+.line {
+    content: "";
+    height: 1px;
+    background: #00000014;
+}
+.main-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    font-size: 2.7rem;
+    width: 70%;
+}
+.main-img p {
+    width: 70%;
+    margin: 50px;
+}
+.img1 {
+    background: url(./images/pic01.jpg) center/cover;
+    width: 100%;
+    height: 80vh;
+}
+
+/**************************** SECONDE PARTIE ***********************/
+
+.main-bot {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.m-b-left {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid #00000014;
+}
+.m-b-left i {
+    margin: 15px;
+}
+.m-b-left h6 {
+    margin: 15px 0;
+}
+.img-b-left {
+    background: url(./images/pic02.jpg) center/cover;
+    width: 100%;
+    height: 300px;
+}
+.m-b-left p {
+    margin: 30px;
+}
+.m-b-right {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid #00000014;
+}
+.m-b-right i {
+    margin: 15px;
+}
+.m-b-right h6 {
+    margin: 15px 0;
+}
+.img-b-right {
+    background: url(./images/pic03.jpg) center/cover;
+    width: 100%;
+    height: 300px;
+}
+.m-b-right p {
+    margin: 30px;
+}
+
+/**************************** FORMULAIRE ************************/
+
+footer {
+    margin: 30px 0 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: whitesmoke;
+    width: 100%;
+    height: 70vh;
+}
+footer section {
+    border: 1px solid #00000014;
+}
+form {
+    padding: 30px;
+}
+form div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 10px;
+}
+#name,
+#email {
+    background: whitesmoke;
+    border: 1px solid #00000014;
+    height: 40px;
+    margin: 10px 0;
+}
+#message {
+    background: whitesmoke;
+    border: 1px solid #00000014;
+    height: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+}
+.foot {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+.foot-q {
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+.foot-d {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    padding: 0 0 0 15px;
+}
+
+
+/*############################### MOBILE ###################################*/
+
+@media screen and (max-width: 650px) {
+    body {
+        font-size: 0.8rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin: 50px 0;
+        width: 90%;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h6 {
+        font-size: 0.9;
+    }
+    .head-right {
+        display: none;
+    }
+    .main-bot {
+        display: block;
+    }
+    footer {
+        display: block;
+        height: 140vh;
+    }
+    .foot {
+        height: 75vh;
+    }
+}
+
+
+
+
+
